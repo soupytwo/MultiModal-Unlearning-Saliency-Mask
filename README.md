@@ -19,6 +19,12 @@ The following libraries are used for preprocessing and mask generation scripts:
 1. CLEARDatasetProcessor: This handles the image-text data and creates label masks to be processed in the future.
 2. SaliencyMaskGenerator: The function that processes all the label masks and generates the saliency mask.
 
+### Project Outline:
+1. generate_mask.py: Contains the logic, or SaliencyMaskGenerator, for generating the mask.
+2. process_dataset.py: Tests generate mask to ensure the functions work properly
+3. tensor_generation.py: Utitlizes CLEARDatasetProcessor to generate forget and retain tensors.
+4. testing_generate_mask.py: Saves the tensors to .pt, and tests tensor_generation.
+
 ## Author
 
 Eric Wang 
